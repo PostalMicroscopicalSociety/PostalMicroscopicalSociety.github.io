@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<script language="javascript">
+<!--
+ok = false; pick = 1;
+if (navigator.userAgent.indexOf ("Mozilla") != -1) {
+  ok = parseInt(navigator.appVersion.substring(0,1)) >= 3
+} else {}
+
+   if (ok == 1) {
+      arrowx = new Image(23,20)
+      arrowx.src = "images/arrow_x.gif"
+      arrowo = new Image(23,20)
+      arrowo.src = "images/arrow_o.gif"
+   }
+   function un(nom) {
+       if (ok == 1) {
+          if ((nom == "f1")&&(pick!=1)) {document.f1.src = arrowo.src;}
+          if ((nom == "f2")&&(pick!=2)) {document.f2.src = arrowo.src;}
+          if ((nom == "f3")&&(pick!=3)) {document.f3.src = arrowo.src;}
+          if ((nom == "f4")&&(pick!=4)) {document.f4.src = arrowo.src;}
+          if ((nom == "f5")&&(pick!=5)) {document.f5.src = arrowo.src;}
+          if ((nom == "f6")&&(pick!=6)) {document.f6.src = arrowo.src;}
+          return true;
+       }
+   }
+   function deux(nom) {
+       if (ok == 1) {
+          if ((nom == "f1")&&(pick!=1)) {document.f1.src = arrowx.src;}
+          if ((nom == "f2")&&(pick!=2)) {document.f2.src = arrowx.src;}
+          if ((nom == "f3")&&(pick!=3)) {document.f3.src = arrowx.src;}
+          if ((nom == "f4")&&(pick!=4)) {document.f4.src = arrowx.src;}
+          if ((nom == "f5")&&(pick!=5)) {document.f5.src = arrowx.src;}
+          if ((nom == "f6")&&(pick!=6)) {document.f6.src = arrowx.src;}
+          return true;
+       }
+   }
+   function trois(nom) {
+       if (ok == 1) {
+          if (pick==1) {document.f1.src = arrowx.src;}
+          if (pick==2) {document.f2.src = arrowx.src;}
+          if (pick==3) {document.f3.src = arrowx.src;}
+          if (pick==4) {document.f4.src = arrowx.src;}
+          if (pick==5) {document.f5.src = arrowx.src;}
+          if (pick==6) {document.f6.src = arrowx.src;}
+          if ((nom == "f1")&&(pick!=1)) {document.f1.src = arrowo.src; pick=1}
+          if ((nom == "f2")&&(pick!=2)) {document.f2.src = arrowo.src; pick=2}
+          if ((nom == "f3")&&(pick!=3)) {document.f3.src = arrowo.src; pick=3}
+          if ((nom == "f4")&&(pick!=4)) {document.f4.src = arrowo.src; pick=4}
+          if ((nom == "f5")&&(pick!=5)) {document.f5.src = arrowo.src; pick=5}
+          if ((nom == "f6")&&(pick!=6)) {document.f6.src = arrowo.src; pick=6}
+          if (pick==1) {document.f1.src = arrowo.src;}
+          if (pick==2) {document.f2.src = arrowo.src;}
+          if (pick==3) {document.f3.src = arrowo.src;}
+          if (pick==4) {document.f4.src = arrowo.src;}
+          if (pick==5) {document.f5.src = arrowo.src;}
+          if (pick==6) {document.f6.src = arrowo.src;}
+
+          return true;
+       }
+   }
+// -->
+</script>
+<META NAME="Author" CONTENT="Visicom Media Inc.">
+<META NAME="Description" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+</HEAD>
+
+<BODY BACKGROUND="images/backmenu.gif" BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#000080" VLINK="#800080" ALINK="#FF0000" LEFTMARGIN=12 TOPMARGIN=0>
+<BASE TARGET=main>
+<TABLE WIDTH=100 HEIGHT=180 CELLPADDING=0 BORDER=0 CELLSPACING=0>
+  <TR>
+      <TD ALIGN=right WIDTH=20 VALIGN=top
+           ><IMG SRC="images/arrow_o.gif" BORDER=0 WIDTH=23 HEIGHT=20 name=f1
+           ><IMG SRC="images/arrow_x.gif" BORDER=0 WIDTH=23 HEIGHT=20 name=f2
+           ><IMG SRC="images/arrow_x.gif" BORDER=0 WIDTH=23 HEIGHT=20 name=f3
+           ><IMG SRC="images/arrow_x.gif" BORDER=0 WIDTH=23 HEIGHT=20 name=f4
+           ><IMG SRC="images/arrow_x.gif" BORDER=0 WIDTH=23 HEIGHT=20 name=f5
+           ><IMG SRC="images/arrow_x.gif" BORDER=0 WIDTH=23 HEIGHT=20 name=f6
+      ></TD>
+
+     <!--  *************************************************************************************************************
+                  FROM HERE PUT IN THE IMAGES CORRESPONDING WITH YOUR PERSONAL MENU
+                  Only change the name of the image ex: b_welcome.gif
+                  You can also include your own images  86x20pixels with transparency
+             ************************************************************************************************************* -->
+      <TD VALIGN=top width=80
+           ><A HREF="main1.html" onmouseover="un('f1')" onmouseout="deux('f1')" onclick="trois('f1')"
+                        ><IMG SRC="images/b_welcome.gif" BORDER=0 WIDTH=86 HEIGHT=20 ></A
+           ><A HREF="main2.html" onmouseover="un('f2')" onmouseout="deux('f2')" onclick="trois('f2')"
+                      ><IMG SRC="images/b_company.gif" BORDER=0 WIDTH=86 HEIGHT=20></A
+           ><A HREF="main3.html" onmouseover="un('f3')" onmouseout="deux('f3')" onclick="trois('f3')"
+                      ><IMG SRC="images/b_services.gif" BORDER=0 WIDTH=86 HEIGHT=20></A
+           ><A HREF="main4.html" onmouseover="un('f4')" onmouseout="deux('f4')" onclick="trois('f4')"
+                      ><IMG SRC="images/b_products.gif" BORDER=0 WIDTH=86 HEIGHT=20></A
+           ><A HREF="main5.html" onmouseover="un('f5')" onmouseout="deux('f5')" onclick="trois('f5')"
+                      ><IMG SRC="images/b_support.gif" BORDER=0 WIDTH=86 HEIGHT=20></A
+           ><A HREF="main6.html" onmouseover="un('f6')" onmouseout="deux('f6')" onclick="trois('f6')"
+                      ><IMG SRC="images/b_contact.gif" BORDER=0 WIDTH=86 HEIGHT=20></A
+       ></TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>
